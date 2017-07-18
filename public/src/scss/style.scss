@@ -1,0 +1,14 @@
+@import 'variables'; //estamos  llamando  al  archivo  con las  variables.
+@import 'mixin';
+
+.botton-amarillo{
+	background-color: $amarillo-botones;
+}
+.imagenCarrusel{
+	width: 100%;
+	margin-top: 3%;
+	
+}
+.texto-letra{
+	color: $gris-letra-soft;
+}
