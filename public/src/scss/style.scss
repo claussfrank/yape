@@ -4,11 +4,22 @@
 .botton-amarillo{
 	background-color: $amarillo-botones;
 }
-.imagenCarrusel{
-	width: 100%;
-	margin-top: 3%;
-	
-}
+
 .texto-letra{
 	color: $gris-letra-soft;
 }
+.icons-img{
+	width: 
+		15%;
+}
+.carousel{
+	height:900px !important;
+}
+
+.carousel-slider .indicators .indicator-item.active{
+	background-color:$rojo-bullet;
+}
+.carousel-slider .indicators .indicator-item{
+	background-color:rgba(246,68,81,0.29);
+}
+

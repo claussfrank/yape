@@ -1,11 +1,19 @@
 .botton-amarillo {
   background-color: #fbd43b; }
 
-.imagenCarrusel {
-  width: 100%;
-  margin-top: 3%; }
-
 .texto-letra {
   color: #8f8f8f; }
+
+.icons-img {
+  width: 15%; }
+
+.carousel {
+  height: 900px !important; }
+
+.carousel-slider .indicators .indicator-item.active {
+  background-color: #f64552; }
+
+.carousel-slider .indicators .indicator-item {
+  background-color: rgba(246, 68, 81, 0.29); }
 
 /*# sourceMappingURL=style.css.map */

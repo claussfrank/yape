@@ -13,20 +13,35 @@
 			<div class="row">
 				<img class="imagenCarrusel col s6 offset-s3" src="static/assets/img/icons/phone.png">
 			</div>
+		</section>
+		<section class="container">
 			<div class="row">
 				<h2 class="center">Para comenzar validemos tu número</h2>
 			</div>
 			<div class="row">
 				<h4 class="center texto-letra">Recibirás un SMS con un código de validación</h4>
 			</div>
+		</section>
+		<form class="container">		
 			<div class="row">
-				<div class="input-field col s6">
-					<i class="material-icons prefix">stay_current_portrait</i>
-					<input id="icon_telephone" type="tel" class="validate">
-					<label for="icon_telephone">Telephone</label>
+				<div class="input-field col s12">
+					<input id="icon_telephone" type="tel" class="validate col s12">
+					<label for="icon_telephone"><img class="icons-img" src="assets/img/icons/phoneandnumber.png"></label>
 				</div>
 			</div>
-		</section>
+
+			<div class="row">
+				<div class="col s12">
+					<input type="checkbox" class="filled-in " id="filled-in-box" checked="checked" />
+					<label class="col s1" for="filled-in-box"></label>
+					<span class="col s11"><h5>Acepto los <a>Términos y condiciones</a></h5></span>
+				</div>
+			</div>
+
+			<div class="row">
+				<button type="submit" class="btn-large disabled col s4 offset-s4">Continuar</button>
+			</div>	
+		</form>
 
 		<script src="static/jquery/dist/jquery.min.js"></script>
 		<script src="static/materialize-css/dist/js/materialize.min.js"></script>
