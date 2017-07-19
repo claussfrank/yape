@@ -8,10 +8,7 @@
 .texto-letra{
 	color: $gris-letra-soft;
 }
-.icons-img{
-	width: 
-		15%;
-}
+
 .carousel{
 	height:900px !important;
 }
@@ -22,4 +19,18 @@
 .carousel-slider .indicators .indicator-item{
 	background-color:rgba(246,68,81,0.29);
 }
-
+#body-registo{
+	background-color: $amarillo-botones;
+}
+.img-center{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items:center;
+	height: 100vh;
+	
+}
+.text-morado{
+	color: $morado-entrada-numero;
+	font-weight: 800;
+}

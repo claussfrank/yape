@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Yape Registro</title>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="static/materialize-css/dist/css/materialize.min.css">
+		<link rel="stylesheet" type="text/css" href="static/assets/css/style.css">
+
+	</head>
+	<body>
+		<section class="container">
+			<div class="row">
+				<img class="col s6 offset-s3" src="static/assets/img/icons/lockone.png">
+			</div>
+		</section>
+		<section class="container">
+			<div class="row">
+				<h2 class="center">Crea tu usuario Yape</h2>
+			</div>
+			<div class="row">
+				<h5 class="col s12 center texto-letra">Ingresa un nombre, email y clave de usuario</h5>
+			</div>
+		</section>
+
+		<form class="container">		
+		
+			<div class="row">
+				<div class="col s12">
+					<div class="row">
+						<samp class="col s1"><img class="icons-img" src="assets/img/icons/user.png"></samp>
+						<div class="input-field col s11">
+							<input id="icon_User" type="text" class="validate col s12">
+							<label>Nombre</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col s12">
+					<div class="row">
+						<samp class="col s1"><img class="icons-img" src="assets/img/icons/message-gray.png"></samp>
+						<div class="input-field col s11">
+							<input id="icon_correo" type="text" class="validate col s12">
+							<label>correo@ejemplo.com</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col s12">
+					<div class="row">
+						<samp class="col s1"><img class="icons-img" src="assets/img/icons/lock.png"></samp>
+						<div class="input-field col s11">
+							<input id="password" type="password"class="validate col s12">
+							<label>Ingresa clave de 6 digitos</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<h5 class="center col s12 texto-letra">Cuida esta clave como oro, es tu acceso a Yape</h5>
+			</div>
+
+		</form>
+		<!--		// revcuerda que lo sacamos para la maquetacion y  cuando  quieras hacer la funcion convierte a btn y metolo a form-->
+		<div class="row">
+			<a  class="btn-large  col s4 offset-s4" href="registroDatosOk.html" >Continuar</a>
+		</div>
+
+
+		<script src="static/jquery/dist/jquery.min.js"></script>
+		<script src="static/materialize-css/dist/js/materialize.min.js"></script>
+		<script src="static/assets/js/main.js"></script>
+	</body>
+</html>

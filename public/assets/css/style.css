@@ -4,9 +4,6 @@
 .texto-letra {
   color: #8f8f8f; }
 
-.icons-img {
-  width: 15%; }
-
 .carousel {
   height: 900px !important; }
 
@@ -15,5 +12,19 @@
 
 .carousel-slider .indicators .indicator-item {
   background-color: rgba(246, 68, 81, 0.29); }
+
+#body-registo {
+  background-color: #fbd43b; }
+
+.img-center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh; }
+
+.text-morado {
+  color: #49233b;
+  font-weight: 800; }
 
 /*# sourceMappingURL=style.css.map */
