@@ -1,54 +1,48 @@
 var $telefono = $('#telefono');
 var $acepta =$('#acepta');
-var $siguiente = $('#continuarRegistro');
-
+var $botonSiguiente = $('#continuarRegistro');
 
 
 
 var cargarPagina = function(){
 	$('.carousel.carousel-slider').carousel({fullWidth: true});
-	$('#envio-tel').submit(cargarApi);
-	validar(cargarApi)
-//	$acepta.click(validar);
+	$acepta.click(validar);
+	$telefono.change(validar);
+	//	$acepta.change(removerAtributo);
+
 };
 
+var validar = function(event) {
+	event.preventDefault();
 
-
-var api ={
-	url:'http://localhost:3000/api/registerNumber'
-};
-
-
-var validar = function() {
 	var $valorTel = $telefono.val();
 	console.log($valorTel.length);
-//
-//	if($telefono.val().length === 10 && ){
-//	   
-////		removerAtributo();
-//	}else {
-//			$siguiente.attr("disabled", true);
-//		};
+
+	if ( $telefono.val().length === 10 && $acepta.is(":checked") ){
+
+		removerAtributo();
+
+	}else {
+		$botonSiguiente.attr("disabled", true);
+	};
+
 };
 
 var removerAtributo = function (){
-	$siguiente.removeAttr("disabled");
+	console.log("ya casi");
+	$botonSiguiente.removeAttr("disabled");
 };
 
-var cargarApi = function(event){
-	event.preventDefault();
-	var $valorTel = $telefono.val();
+$.post("http://localhost:3000/api/registerNumber", {
+	
+		"phone": $telefono.val(),
+		"terms": true
 
-	console.log($valorTel);
-		$.post(api.url,{
-			"phone":$valorTel,
-			"terms":true
+	}).then(function(respuesta){
+		console.log(respuesta);
+	}).catch(function(error){
+		console.log(error);
+	})
 
-		}).then(function(response){
-			console.log(response);
 
-		}).catch(function(error){
-			console.log(error);
-		});
-};
 $(document).ready(cargarPagina);
