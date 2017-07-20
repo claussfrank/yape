@@ -22,28 +22,28 @@
 				<h4 class="center texto-letra">Recibirás un SMS con un código de validación</h4>
 			</div>
 		</section>
-		<form class="container">		
-			<div class="row">
-				<div class="input-field col s12">
-					<input id="icon_telephone" type="tel" class="validate col s12">
-					<label for="icon_telephone"><img class="icons-img" src="assets/img/icons/phoneandnumber.png"></label>
+   <section class="container">
+			<form  id="envio-tel">
+				<div class="row">
+					<div class="input-field col s12">
+						<input id="telefono" type="tel" class="col s12">
+						<label for="icon_telephone"><img class="icons-img" src="assets/img/icons/phoneandnumber.png"></label>
+					</div>
 				</div>
-			</div>
 
-			<div class="row">
-				<div class="col s12">
-					<input type="checkbox" class="filled-in " id="filled-in-box" checked="checked" />
-					<label class="col s1" for="filled-in-box"></label>
-					<span class="col s11"><h5>Acepto los <a>Términos y condiciones</a></h5></span>
+				<div class="row">
+					<div class="col s12">
+						<input type="checkbox" class="filled-in" id="acepta" />
+      			<label for="acepta"><h5>Acepto los <a>Términos y condiciones</a></h5></label>
+					</div>
 				</div>
-			</div>
 
-				
-		</form>
-<!--		// revcuerda que lo sacamos para la maquetacion y  cuando  quieras hacer la funcion convierte a btn y metolo a form-->
-			<div class="row">
-				<a  class="btn-large  col s4 offset-s4" href="registroDatos.html" >Continuar</a>
-			</div>
+				<div class="row">
+					<button id="continuarRegistro" type="submit" class="btn-large col s4 disabled offset-s4" href="registroDatos.html" >Continuar</button>
+				</div>
+
+			</form>
+   </section>
 
 		<script src="static/jquery/dist/jquery.min.js"></script>
 		<script src="static/materialize-css/dist/js/materialize.min.js"></script>

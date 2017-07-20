@@ -5,10 +5,6 @@
 	background-color: $amarillo-botones;
 }
 
-.texto-letra{
-	color: $gris-letra-soft;
-}
-
 .carousel{
 	height:900px !important;
 }
@@ -19,8 +15,30 @@
 .carousel-slider .indicators .indicator-item{
 	background-color:rgba(246,68,81,0.29);
 }
+
+.texto-letra{
+	color: $gris-letra-soft;
+}
+.texto-letra--turquesa{
+	color: $turquesa-condiciones;
+}
+.texto-letra--blanco{
+	color: white;
+}
+.text-morado{
+	color: $morado-entrada-numero;
+	font-weight: 800;
+}
+
+
 #body-registo{
 	background-color: $amarillo-botones;
+}
+#body-morado{
+	background-color: $morado-dark;
+}
+#body-morado--claro{
+	background-color: $morado-light;
 }
 .img-center{
 	display: flex;
@@ -30,7 +48,10 @@
 	height: 100vh;
 	
 }
-.text-morado{
-	color: $morado-entrada-numero;
-	font-weight: 800;
+
+.border-blanco{
+	border-bottom:.5px solid white;
+}
+.pading-cero{
+	padding:0 !important;	
 }

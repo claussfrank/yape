@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Yape Registro</title>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="static/materialize-css/dist/css/materialize.min.css">
+		<link rel="stylesheet" type="text/css" href="static/assets/css/style.css">
+
+	</head>
+	<body>
+		<section class="container">
+			<div class="row">
+				<img class="col s1 offset-s11 pading-cero" src="assets/img/icons/question.png">
+			</div>
+		</section>
+		
+		<section class="container">
+			<div class="row">
+				<img class="col s6 offset-s3" src="static/assets/img/icons/bcp-logo.png">
+			</div>
+		</section>
+		<section class="container">
+			<div class="row">
+				<h2 class="center">Registra tu tarjeta débito BCP</h2>
+			</div>
+			<div class="row">
+				<h5 class="center texto-letra">Por ahora solo aceptamos cuentas de ahorro y/o corriente en pesos.</h5>
+			</div>
+		</section>
+
+		<form class="container">		
+
+			<div class="row">
+				<div class="col s12">
+					<div class="row">
+						<samp class="col s1"><img class="icons-img" src="assets/img/icons/card.png"></samp>
+						<div class="input-field   col s11">
+							<input id="num-card" type="number" class="validate col s12">
+						</div>
+					</div>
+					<div class="row">
+						<img class="col s1 offset-s3 pading-cero" src="assets/img/icons/scan.png">
+						<h5 class="col s5 texto-letra--turquesa">Escanear tarjeta</h5>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<h5 class="col s7 texto-letra">Fecha de vencimiento</h5>
+				<input  class="input-field col s2" placeholder="Mes" id="mes-val" type="text" class="validate">
+				<h5 class="col s1">/</h5>
+				<input  class="input-field col s2"placeholder="Año" id="mes-val" type="text" class="validate">
+
+
+			</div>
+
+		</form>
+		<!--		// revcuerda que lo sacamos para la maquetacion y  cuando  quieras hacer la funcion convierte a btn y metolo a form-->
+		<div class="row">
+			<a  class="btn-large  col s4 offset-s4" href="tarjetaClave.html" >Continuar</a>
+		</div>
+
+
+		<script src="static/jquery/dist/jquery.min.js"></script>
+		<script src="static/materialize-css/dist/js/materialize.min.js"></script>
+		<script src="static/assets/js/main.js"></script>
+	</body>
+</html>

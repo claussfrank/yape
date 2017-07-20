@@ -1,9 +1,6 @@
 .botton-amarillo {
   background-color: #fbd43b; }
 
-.texto-letra {
-  color: #8f8f8f; }
-
 .carousel {
   height: 900px !important; }
 
@@ -13,8 +10,27 @@
 .carousel-slider .indicators .indicator-item {
   background-color: rgba(246, 68, 81, 0.29); }
 
+.texto-letra {
+  color: #8f8f8f; }
+
+.texto-letra--turquesa {
+  color: #00c3a3; }
+
+.texto-letra--blanco {
+  color: white; }
+
+.text-morado {
+  color: #49233b;
+  font-weight: 800; }
+
 #body-registo {
   background-color: #fbd43b; }
+
+#body-morado {
+  background-color: #38052a; }
+
+#body-morado--claro {
+  background-color: #451e36; }
 
 .img-center {
   display: flex;
@@ -23,8 +39,10 @@
   align-items: center;
   height: 100vh; }
 
-.text-morado {
-  color: #49233b;
-  font-weight: 800; }
+.border-blanco {
+  border-bottom: .5px solid white; }
+
+.pading-cero {
+  padding: 0 !important; }
 
 /*# sourceMappingURL=style.css.map */
