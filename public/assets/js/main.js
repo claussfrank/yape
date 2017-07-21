@@ -8,7 +8,9 @@ var cargarPagina = function(){
 	$('.carousel.carousel-slider').carousel({fullWidth: true});
 	$acepta.click(validar);
 	$telefono.change(validar);
+	$('#envio-tel').submit(agregarApi);
 	//	$acepta.change(removerAtributo);
+	
 
 };
 
@@ -21,6 +23,7 @@ var validar = function(event) {
 	if ( $telefono.val().length === 10 && $acepta.is(":checked") ){
 
 		removerAtributo();
+		localStorage.setItem("telefono",$valorTel);
 
 	}else {
 		$botonSiguiente.attr("disabled", true);
@@ -33,16 +36,23 @@ var removerAtributo = function (){
 	$botonSiguiente.removeAttr("disabled");
 };
 
-$.post("http://localhost:3000/api/registerNumber", {
+var agregarApi = function(event){
+	event.preventDefault();
+	
+	$.post("http://localhost:3000/api/registerNumber", {
 	
 		"phone": $telefono.val(),
 		"terms": true
 
-	}).then(function(respuesta){
+	},function(respuesta){
 		console.log(respuesta);
-	}).catch(function(error){
-		console.log(error);
-	})
+	});
+}; 
+
+var alerta = function(){
+	alerta("Hola");
+}
+
 
 
 $(document).ready(cargarPagina);
